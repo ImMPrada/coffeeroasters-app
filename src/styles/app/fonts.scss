@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100;9..144,200;9..144,300;9..144,400;9..144,500;9..144,600;9..144,700;9..144,800;9..144,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Fraunces:opsz,wght@9..144,100;9..144,200;9..144,300;9..144,400;9..144,500;9..144,600;9..144,700;9..144,800;9..144,900&display=swap');
+
+@mixin title-alternate-big {
+  font-family: 'Fraunces', serif;
+  font-size: 9.375rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1;
+}
+
+@mixin text-h1 {
+  font-family: 'Fraunces', serif;
+  font-size: 4.5rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1;
+}
+
+@mixin text-h2 {
+  font-family: 'Fraunces', serif;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1.46;
+  }
+
+@mixin text-h3 {
+  font-family: 'Fraunces', serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1.125;
+}
+
+@mixin text-h4 {
+  font-family: 'Fraunces', serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1.33;
+}
+
+@mixin text-body {
+  font-family: 'Barlow', sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.625;
+}
+
+@mixin text-nav-menu {
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 0.9375rem;
+  letter-spacing: 0.05769rem;
+}
+
+.main-container {
+  width: 100%;
+  padding: 0 10.31rem;
+}
+
+.big-title-font {
+  @include title-alternate-big;
+}
+
+.font-h1 {
+  @include text-h1;
+}
+
+.font-h2 {
+  @include text-h2;
+}
+
+.font-h3 {
+  @include text-h3;
+}
+
+.font-h4 {
+  @include text-h4;
+}
+
+.body-text {
+  @include text-body;
+}
+
+.nav-menu {
+  @include text-nav-menu;
+}
