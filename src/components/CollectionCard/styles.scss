@@ -1,0 +1,25 @@
+@import "../styles/app/colors.scss";
+@import "../styles/app/breakpoints.scss";
+
+.collectioncard{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.45rem;
+
+  &-content{
+    text-align: center;
+
+    .title{
+      color: $dark-grey-blue;
+      margin-top: 1.125rem;
+      display: block;
+      justify-items: center;
+    }
+
+    .description{
+      color: $dark-grey-blue;
+      margin-top: 1.125rem;
+    }
+  }
+}
