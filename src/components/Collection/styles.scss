@@ -23,57 +23,31 @@
       padding: 0 58px;
       padding-top: 87px;
       background: linear-gradient(to top, $light-cream 0%, $light-cream 78%, transparent 100%);
-      display: grid;
-      grid-template-columns: 4;
-      grid-template-rows: 1;
-      grid-column-gap: auto;
-
-      @for $i from 1 through 4 {
-        .collectioncard:nth-child(#{$i}) {
-          grid-column: $i;
-          grid-row: 1;
-        }
-      }
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
     
       @media (max-width: $lg) {
-        grid-template-columns: 1;
-        grid-template-rows: 4;
         background: linear-gradient(to top, $light-cream 0%, $light-cream 85%, transparent 100%);
-
-        @for $i from 1 through 4 {
-          .collectioncard:nth-child(#{$i}) {
-            grid-row: $i;
-            grid-column: 1;
-            width: 80%;
-            justify-self: center;
-          }
-        }
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 30px;
       }
 
       @media (max-width: $md) {
         padding-top: 40px;
         background: linear-gradient(to top, $light-cream 0%, $light-cream 92%, transparent 100%);
-
-        @for $i from 1 through 4 {
-          .collectioncard:nth-child(#{$i}) {
-            width: 100%;
-            justify-self: center;
-          }
-        }
+        align-items: center;
+        gap: 30px;
       }
 
       @media (max-width: $sm) {
         padding: 0;
         padding-top: 40px;
         background: linear-gradient(to top, $light-cream 0%, $light-cream 97%, transparent 100%);
-        width: 100%;
-
-        @for $i from 1 through 4 {
-          .collectioncard:nth-child(#{$i}) {
-            width: 70%;
-            justify-self: center;
-          }
-        }
+        align-items: center;
+        gap: 30px;
       }
     }
   }
