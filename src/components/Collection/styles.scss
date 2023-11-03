@@ -32,7 +32,7 @@
         background: linear-gradient(to top, $light-cream 0%, $light-cream 85%, transparent 100%);
         flex-direction: column;
         justify-content: flex-start;
-        gap: 30px;
+        gap: 30px; 
       }
 
       @media (max-width: $md) {
