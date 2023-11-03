@@ -1,0 +1,11 @@
+@import "../styles/app/colors.scss";
+@import "../styles/app/breakpoints.scss";
+
+.steps-container{
+  display: flex;
+  flex-direction: row;
+
+  @media (max-width: $md) {
+    flex-direction: column;
+  }
+}

@@ -24,6 +24,10 @@
       border: 0.06rem solid $pale-orange;
       width: 100%;
     }
+
+    @media (max-width: $md) {
+      display: none;
+    }
   }
 
   &-content{
@@ -42,12 +46,6 @@
     .step-description{
       color: $dark-grey-blue;
       margin-top: 1.125rem;
-    }
-  }
-
-  @media (max-width: $lg) {
-    &-logo {
-      display: none;
     }
   }
 }
