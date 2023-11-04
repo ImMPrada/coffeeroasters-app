@@ -1,4 +1,4 @@
-import CollectionCard from "../CollectionCard/CollectionCard"
+import InfoCard from "../InfoCard/InfoCard"
 import './styles.scss'
 import DanchePNG from "../../assets/danche.png"
 import PlanaltoPNG from "../../assets/planalto.png"
@@ -16,22 +16,22 @@ function Collection() {
             </p>
           </div>
           <div className="collection-container-cards">
-            <CollectionCard
+            <InfoCard
               imagePath = {DanchePNG}
               title = "Gran Espresso"
               description = "Light and flavorful blend with cocoa and black pepper for an intense experience"
             />
-            <CollectionCard
+            <InfoCard
               imagePath = {PlanaltoPNG}
               title = "Planalto"
               description = "Brazilian dark roast with rich and velvety body, and hints of fruits and nuts"
             />
-            <CollectionCard
+            <InfoCard
               imagePath = {PicolloPNG}
               title = "Picollo"
               description = "Mild and smooth blend featuring notes of toasted almond and dried cherry"
             />
-            <CollectionCard
+            <InfoCard
               imagePath = {GranEspressoPNG}
               title = "Danche"
               description = "Ethiopian hand-harvested blend densely packed with vibrant fruit notes"

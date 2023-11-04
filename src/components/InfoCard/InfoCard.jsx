@@ -1,15 +1,15 @@
 import './styles.scss'
 
-function CollectionCard(props) {
+function InfoCard(props) {
   const { imagePath, title, description } = props;
 
   return (
     <>
-      <div className="collectioncard">
-        <div className="collectioncard-image">
+      <div className="infocard">
+        <div className="infocard-image">
           <img src={imagePath} alt={title} />
         </div>
-        <div className="collectioncard-content">
+        <div className="infocard-content">
           <p className="font-h4 title">
             {title}
           </p>
@@ -22,4 +22,4 @@ function CollectionCard(props) {
   )
 }
 
-export default CollectionCard;
+export default InfoCard;
