@@ -1,0 +1,36 @@
+@import "../styles/app/colors.scss";
+@import "../styles/app/breakpoints.scss";
+
+.headquartersinfo{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  @media (max-width: $sm) {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &-group1{
+    display: flex;
+    gap: 60px;
+
+    @media (max-width: $md) {
+      gap: 30px;
+    }
+
+    @media (max-width: $sm) {
+      flex-direction: column;
+    }
+  }
+
+  &-group2{
+    padding-right: 60px;
+    
+    @media (max-width: $md) {
+      padding-right: 30px;
+    }
+  }
+}
