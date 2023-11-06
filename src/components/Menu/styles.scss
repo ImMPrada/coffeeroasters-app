@@ -9,6 +9,10 @@
       display: flex;
       gap: 32px;
 
+      @media (max-width: $md) {
+        gap: 10px;
+      }
+
       a {
         text-decoration: none;
         color: $dark-grey-blue;
@@ -35,18 +39,19 @@
   top: 110px;
   left: 0;
   z-index: 3;
-  padding-bottom: 80px;
+  padding-bottom: 100px;
   background: linear-gradient(to bottom, $light-cream 0%, $light-cream 40%, transparent 100%);
 
   ul{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 14px;
     align-items: center;
 
     a {
       text-decoration: none;
       color: $dark-grey-blue;
+      font-size: 18px;
     
       &:hover {
         color: black;
