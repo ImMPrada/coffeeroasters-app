@@ -1,0 +1,54 @@
+@import "../styles/app/colors.scss";
+@import "../styles/app/breakpoints.scss";
+
+$border-radius: 8px;
+
+@mixin card-content-base{
+  padding: 32px 28px 84px 28px;
+  border-radius: $border-radius;
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: left;
+  gap: 18px;
+
+  @media (max-width: $lg) {
+    padding: 16px 14px 42px 14px;
+  }
+}
+
+.optioncard {
+  border-radius: $border-radius;
+  background-color: $light-cream;
+  color: $dark-grey-blue;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  max-width: 228px;
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  @media (max-width: $md) {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  &-content {
+    @include card-content-base();
+
+    &-selected {
+      @include card-content-base();
+  
+      background-color: $dark-cyan;
+      color: $light-cream;
+    }
+  }
+
+  &:hover {
+    background-color: $pale-orange;
+  }
+}

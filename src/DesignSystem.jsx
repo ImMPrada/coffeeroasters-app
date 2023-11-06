@@ -1,3 +1,4 @@
+import SubscriptionForm from "./components/SubscriptionForm/SubscriptionForm"
 import NavBar from "./components/NavBar/NavBar"
 import Cover from "./components/Cover/Cover"
 import HeadquartersInfo from "./components/HeadquartersInfo/HeadquartersInfo"
@@ -9,6 +10,43 @@ import WitheCupCover from './assets/whitecup-header.png'
 import CreatePlanover from './assets/createplan-header.png'
 import Logo from './assets/logo.svg'
 
+const options = [
+  [
+    {
+      title: "Capsule",
+      id: "1",
+      description: "Compatible with Nespresso systems and similar brewers"
+    },
+    {
+      title: "Filter",
+      id: "2",
+      description: "For pour over or drip methods like Aeropress, Chemex, and V60"
+    },
+    {
+      title: "Espresso",
+      id: "3",
+      description: "Dense and finely ground beans for an intense, flavorful experience"
+    },
+  ],
+  [
+    {
+      title: "Single Origin",
+      id: "4",
+      description: "Distinct, high quality coffee from a specific family-owned farm"
+    },
+    {
+      title: "Decaf",
+      id: "5",
+      description: "Just like regular coffee, except the caffeine has been removed"
+    },
+    {
+      title: "Blended",
+      id: "6",
+      description: "Combination of two or three dark roasted beans of organic coffees"
+    },
+  ],
+];
+
 function DesignSystem() {
   return (
     <>
@@ -16,6 +54,9 @@ function DesignSystem() {
         <NavBar
           image={Logo}
           title="coffeeroasters"
+        />
+        <SubscriptionForm 
+          options={options}
         />
         <Cover
           image={HomeCover}
