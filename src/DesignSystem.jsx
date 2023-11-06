@@ -1,3 +1,4 @@
+import ActionButton from "./components/ActionButton/ActionButton"
 import SubscriptionForm from "./components/SubscriptionForm/SubscriptionForm"
 import NavBar from "./components/NavBar/NavBar"
 import Cover from "./components/Cover/Cover"
@@ -68,6 +69,8 @@ function DesignSystem() {
   return (
     <>
       <div className="main-container">
+        <ActionButton label="Create yout plan" apiEndpoint="/"/>
+        <ActionButton label="Create yout plan" apiEndpoint="/" isDisabled={true}/>
         <NavBar
           image={Logo}
           title="coffeeroasters"
@@ -80,7 +83,7 @@ function DesignSystem() {
           title="Great coffee made simple."
           content="Start your mornings with the world’s best coffees. Try our expertly curated artisan coffees from our best roasters delivered directly to your door, at your schedule."
         >
-          <button>Holi button</button>
+          <ActionButton label="Create yout plan" apiEndpoint="/"/>
         </Cover>
         <Cover
           image={WitheCupCover}

@@ -1,0 +1,19 @@
+@import "../styles/app/colors.scss";
+@import "../styles/app/breakpoints.scss";
+
+.actionbutton {
+
+  border: none;
+  border-radius: 6px;
+  background-color: $dark-cyan;
+  color: $light-cream;
+  padding: 16px 32px;
+
+  &:hover{
+    background-color: $light-cyan;
+  }
+
+  &:disabled{
+    background-color: $grey;
+  }
+}
