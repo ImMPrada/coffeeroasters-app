@@ -1,3 +1,4 @@
+import NavBar from "./components/NavBar/NavBar"
 import Cover from "./components/Cover/Cover"
 import HeadquartersInfo from "./components/HeadquartersInfo/HeadquartersInfo"
 import WhyUs from './components/WhyUs/WhyUs'
@@ -6,11 +7,16 @@ import Steps from './components/Steps/Steps'
 import HomeCover from './assets/home-header.png'
 import WitheCupCover from './assets/whitecup-header.png'
 import CreatePlanover from './assets/createplan-header.png'
+import Logo from './assets/logo.svg'
 
 function DesignSystem() {
   return (
     <>
       <div className="main-container">
+        <NavBar
+          image={Logo}
+          title="coffeeroasters"
+        />
         <Cover
           image={HomeCover}
           title="Great coffee made simple."

@@ -1,0 +1,27 @@
+@import "../styles/app/colors.scss";
+@import "../styles/app/breakpoints.scss";
+
+.navbar{
+  height: 100px;
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  color: $dark-grey-blue;
+
+  &-title{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    img{
+      height: 40px;
+
+      @media (max-width: $sm) {
+        height: 24px;
+      }
+    }
+  }
+}

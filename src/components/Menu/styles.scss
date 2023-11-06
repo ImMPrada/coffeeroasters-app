@@ -1,0 +1,64 @@
+@import "../styles/app/colors.scss";
+@import "../styles/app/breakpoints.scss";
+
+.menu{
+  
+  nav{
+
+    ul{
+      display: flex;
+      gap: 32px;
+
+      a {
+        text-decoration: none;
+        color: $dark-grey-blue;
+      
+        &:hover {
+          color: black;
+        }
+      
+        &.selected {
+          color: black;
+        }
+      
+        &.active {
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+.menu-toogle{
+  width: 100%;
+  position: absolute;
+  top: 110px;
+  left: 0;
+  z-index: 3;
+  padding-bottom: 80px;
+  background: linear-gradient(to bottom, $light-cream 0%, $light-cream 40%, transparent 100%);
+
+  ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+
+    a {
+      text-decoration: none;
+      color: $dark-grey-blue;
+    
+      &:hover {
+        color: black;
+      }
+    
+      &.selected {
+        color: black;
+      }
+    
+      &.active {
+        color: black;
+      }
+    }
+  }
+}
