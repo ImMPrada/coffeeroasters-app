@@ -1,0 +1,46 @@
+@import "../styles/app/colors.scss";
+@import "../styles/app/breakpoints.scss";
+
+.accordion {
+
+  &-toggle{
+    width: 100%;
+    border: none;
+    background: none;
+    margin-bottom: 56px;
+
+    @media (max-width: $md) {
+      margin-bottom: 28px;
+    }
+
+    @media (max-width: $md) {
+      margin-bottom: 14px;
+    }
+    
+    &:disabled{
+      span{
+        color: $grey;
+      }
+    }
+
+    &-content{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+
+      span{
+        display: block;
+      }
+  
+      img{
+        display: block;
+      }
+
+      &-text{
+        color: $dark-grey-blue;
+      }
+    }
+  }
+}

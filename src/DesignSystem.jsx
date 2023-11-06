@@ -45,6 +45,23 @@ const options = [
       description: "Combination of two or three dark roasted beans of organic coffees"
     },
   ],
+  [
+    {
+      title: "Capsule",
+      id: "1",
+      description: "Compatible with Nespresso systems and similar brewers"
+    },
+    {
+      title: "Filter",
+      id: "2",
+      description: "For pour over or drip methods like Aeropress, Chemex, and V60"
+    },
+    {
+      title: "Espresso",
+      id: "3",
+      description: "Dense and finely ground beans for an intense, flavorful experience"
+    },
+  ],
 ];
 
 function DesignSystem() {
