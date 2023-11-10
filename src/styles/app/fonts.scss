@@ -56,11 +56,6 @@
   letter-spacing: 0.05769rem;
 }
 
-.main-container {
-  width: 100%;
-  padding: 0 10.31rem;
-}
-
 .big-title-font {
   @include title-alternate-big;
   font-size: 116px;
@@ -80,6 +75,10 @@
 
 .font-h2 {
   @include text-h2;
+
+  @media (max-width: $sm) {
+    font-size: 24px;
+  }
 }
 
 .font-h3 {

@@ -1,0 +1,54 @@
+@import "../styles/app/colors.scss";
+@import "../styles/app/breakpoints.scss";
+
+.collection{
+
+  &-container{
+    position: relative;
+    background-color: $light-cream;
+
+    &-title{
+      width: 100%;
+      text-align: center; 
+      color: $grey;
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      background-color: $light-cream;
+    }
+  
+    &-cards{
+      position: relative;
+      z-index: 2;
+      padding: 0 58px;
+      padding-top: 87px;
+      background: linear-gradient(to top, $light-cream 0%, $light-cream 78%, transparent 100%);
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    
+      @media (max-width: $lg) {
+        background: linear-gradient(to top, $light-cream 0%, $light-cream 85%, transparent 100%);
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 30px; 
+      }
+
+      @media (max-width: $md) {
+        padding-top: 40px;
+        background: linear-gradient(to top, $light-cream 0%, $light-cream 92%, transparent 100%);
+        align-items: center;
+        gap: 30px;
+      }
+
+      @media (max-width: $sm) {
+        padding: 0;
+        padding-top: 40px;
+        background: linear-gradient(to top, $light-cream 0%, $light-cream 97%, transparent 100%);
+        align-items: center;
+        gap: 30px;
+      }
+    }
+  }
+}

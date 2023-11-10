@@ -1,0 +1,74 @@
+@import "../styles/app/colors.scss";
+@import "../styles/app/breakpoints.scss";
+
+.infocard{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  max-width: 255px;
+
+  @media (max-width: $lg) {
+    flex-direction: row;
+    max-width: 100%;
+    align-items: flex-start;
+    gap: auto;
+    justify-content: space-between;
+  }
+
+  @media (max-width: $sm) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0 70px;
+  }
+
+  &-image{
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: $lg) {
+      min-width: 180px;
+    }
+
+    img {
+      width: 100%;
+      height: 180px;
+
+      @media (max-width: $lg) {
+        height: 150px;
+      }
+    }
+  }
+
+  &-content{
+    text-align: center;
+
+    @media (max-width: $lg) {
+      text-align: left;
+    }
+
+    @media (max-width: $sm) {
+      text-align: center;
+    }
+
+    .title{
+      color: $dark-grey-blue;
+      justify-items: center;
+    }
+
+    .description{
+      color: $dark-grey-blue;
+      margin-top: 18px;
+
+      @media (max-width: $sm) {
+        margin-top: 24px;
+      }
+
+      @media (max-width: $sm) {
+        margin-top: 16px;
+      }
+    }
+  }
+}

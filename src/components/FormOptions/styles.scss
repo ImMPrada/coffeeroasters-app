@@ -1,0 +1,16 @@
+@import "../styles/app/colors.scss";
+@import "../styles/app/breakpoints.scss";
+
+.formoptions{
+  width: 100%;
+  padding: 0 58px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @media (max-width: $md) {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+}

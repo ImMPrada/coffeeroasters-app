@@ -1,0 +1,51 @@
+@import "../styles/app/colors.scss";
+@import "../styles/app/breakpoints.scss";
+
+.stepcard{
+  display: flex;
+  flex-direction: column;
+
+  &-logo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 4.19rem;
+
+    &-circle{
+      width: 1.94rem;
+      height: 1.94rem;
+      border: 0.12rem solid $dark-cyan;
+      border-radius: 50%;
+      background-color: transparent;
+    }
+
+    &-line{
+      height: 0.06rem;
+      border: 0.06rem solid $pale-orange;
+      width: 100%;
+    }
+
+    @media (max-width: $md) {
+      display: none;
+    }
+  }
+
+  &-content{
+    padding-right: 5.94rem;
+
+    .step-number{
+      color: $pale-orange;
+    }
+
+    .step-title{
+      color: $dark-grey-blue;
+      margin-top: 1.125rem;
+      display: block;
+    }
+
+    .step-description{
+      color: $dark-grey-blue;
+      margin-top: 1.125rem;
+    }
+  }
+}
