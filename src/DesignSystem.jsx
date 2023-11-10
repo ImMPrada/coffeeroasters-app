@@ -1,3 +1,4 @@
+import Footing from "./components/Footing/Footing"
 import ActionButton from "./components/ActionButton/ActionButton"
 import SubscriptionForm from "./components/SubscriptionForm/SubscriptionForm"
 import NavBar from "./components/NavBar/NavBar"
@@ -69,6 +70,10 @@ function DesignSystem() {
   return (
     <>
       <div className="main-container">
+        <Footing
+          image={Logo}
+          title="coffeeroasters"
+        />
         <ActionButton label="Create yout plan" apiEndpoint="/"/>
         <ActionButton label="Create yout plan" apiEndpoint="/" isDisabled={true}/>
         <NavBar
