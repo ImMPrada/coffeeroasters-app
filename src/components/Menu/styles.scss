@@ -13,22 +13,23 @@
         gap: 10px;
       }
 
-      a {
-        text-decoration: none;
-        color: $dark-grey-blue;
-      
-        &:hover {
-          color: black;
-        }
-      
-        &.selected {
-          color: black;
-        }
-      
-        &.active {
-          color: black;
-        }
-      }
+    }
+  }
+
+  &-link {
+    text-decoration: none;
+    color: $dark-grey-blue;
+  
+    &:hover {
+      color: black;
+    }
+  
+    &.selected {
+      color: black;
+    }
+  
+    &.active {
+      color: black;
     }
   }
 }

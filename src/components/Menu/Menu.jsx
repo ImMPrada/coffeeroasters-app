@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './styles.scss'
 import MenuOpenIcon from '../../assets/menu-open-button.svg'
 import MenuCloseIcon from '../../assets/menu-close-button.svg'
@@ -13,13 +14,13 @@ function Menu() {
   const menuUl = (
     <ul>
       <li>
-        <a className="nav-menu" href="/">HOME</a>
+        <Link className="menu-link" to="/">HOME</Link>
       </li>
       <li>
-        <a className="nav-menu" href="/about">ABOUT US</a>
+        <Link className="menu-link" to="/about">ABOUT US</Link>
       </li>
       <li>
-        <a className="nav-menu" href="/create-plan">CREATE YOUR PLAN</a>
+        <Link className="menu-link" to="/create-plan">CREATE YOUR PLAN</Link>
       </li>
     </ul>
   )
