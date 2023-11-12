@@ -1,17 +1,15 @@
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from './pages/Home/Home.jsx'
+import About from './pages/About/About.jsx'
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home/>,
+    element: <Home />,
   },
   {
     path: "/about",
-    element: <div>About us</div>,
+    element: <About />,
   },
   {
     path: "/create-plan",

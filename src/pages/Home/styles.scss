@@ -20,6 +20,10 @@
     @media (max-width: $md) {
       gap: 31px;
     }
+
+    @media (max-width: $md) {
+      padding: 0 20px;
+    }
     
     &-title{
       margin-bottom: 18px;
