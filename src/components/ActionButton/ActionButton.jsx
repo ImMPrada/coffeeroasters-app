@@ -1,12 +1,12 @@
+import { Link } from 'react-router-dom';
 import './styles.scss'
 
 function ActionButton(props) {
   const {
     label,
-    routeTo,
-    submitForm,
-    apiEndpoint,
-    isDisabled,
+    handleSubmit,
+    handleAPI,
+    routePath
   } = props;
 
   const resolveLabel = () => (
@@ -16,10 +16,12 @@ function ActionButton(props) {
   );
 
   const handleButtonClick = () => {
-    if (submitForm) {
-      return <button className="actionbutton" onClick={submitForm} disabled={isDisabled}> {resolveLabel()} </button>;
-    } else if (apiEndpoint) {
-      return <button className="actionbutton" type="button" onClick={apiEndpoint} disabled={isDisabled}> {resolveLabel()} </button>;
+    if (handleSubmit) {
+      return <button className="actionbutton" onClick={handleSubmit} disabled={isDisabled}> {resolveLabel()} </button>;
+    } else if (handleAPI) {
+      return <button className="actionbutton" type="button" onClick={handleAPI} disabled={isDisabled}> {resolveLabel()} </button>;
+    } else if (routePath) {
+      return <Link className="actionbutton" to={routePath}>{resolveLabel()}</Link>
     }
   };
 

@@ -16,7 +16,7 @@ function Home() {
           title="Great coffee made simple."
           content="Start your mornings with the world’s best coffees. Try our expertly curated artisan coffees from our best roasters delivered directly to your door, at your schedule."
         >
-          <ActionButton label="Create yout plan" apiEndpoint="/"/>
+          <ActionButton label="Create yout plan" routePath="/create-plan"/>
         </Cover>
         <Collection />
         <WhyUs />
@@ -26,7 +26,7 @@ function Home() {
           </p>
           <Steps />
           <div>
-            <ActionButton label="Create yout plan" apiEndpoint="/"/>
+            <ActionButton label="Create yout plan" routePath="/create-plan"/>
           </div>
         </div>
       </div>
