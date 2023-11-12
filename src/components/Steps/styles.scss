@@ -1,11 +1,24 @@
 @import "../styles/app/colors.scss";
 @import "../styles/app/breakpoints.scss";
 
-.steps-container{
+.steps-container, .steps-container-dark{
   display: flex;
   flex-direction: row;
 
+
   @media (max-width: $md) {
     flex-direction: column;
+    gap: 50px;
+  }
+}
+
+.steps-container-dark{
+  background-color: $dark-grey-blue;
+  border-radius: 12px;
+  padding: 100px 85px;
+  
+  @media (max-width: $md) {
+    border-radius: 8px;
+    padding: 100px 42px;
   }
 }

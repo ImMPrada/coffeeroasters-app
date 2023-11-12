@@ -1,0 +1,14 @@
+@import "../styles/app/colors.scss";
+@import "../styles/app/breakpoints.scss";
+
+.create-plan{
+  display: flex;
+  flex-direction: column;
+  gap: 168px;
+  margin-bottom: 168px;
+  
+  @media (max-width: $md) {
+    gap: 85px;
+    margin-bottom: 85px;
+  }
+}

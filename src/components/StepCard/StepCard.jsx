@@ -1,18 +1,18 @@
 import './styles.scss'
 
 function StepCard(props) {
-  const { stepNumber, title, description, hideBar } = props;
+  const { stepNumber, title, description, hideBar, darkMode } = props;
 
   return (
     <>
-      <div className="stepcard">
-        <div className="stepcard-logo">
-          <div className="stepcard-logo-circle">
+      <div className={`stepcard${darkMode ? '-dark' : ''}`}>
+        <div className={`stepcard${darkMode ? '-dark' : ''}-logo`}>
+          <div className={`stepcard${darkMode ? '-dark' : ''}-logo-circle`}>
           </div>
-          <div className={`stepcard-logo-line ${hideBar ? "hidden" : ""}`}>
+          <div className={`stepcard${darkMode ? '-dark' : ''}-logo-line ${hideBar ? "hidden" : ""}`}>
           </div>
         </div>
-        <div className="stepcard-content">
+        <div className={`stepcard${darkMode ? '-dark' : ''}-content`}>
           <p className="font-h1 step-number">
             {stepNumber}
           </p>

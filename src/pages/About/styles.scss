@@ -1,0 +1,123 @@
+@import "../styles/app/colors.scss";
+@import "../styles/app/breakpoints.scss";
+
+.about{
+  display: flex;
+  flex-direction: column;
+  gap: 144px;
+  margin-bottom: 144px;
+  
+  @media (max-width: $md) {
+    gap: 72px;
+    margin-bottom: 72px;
+  }
+  
+  &-commitment{
+    display: flex;
+    gap: 20%;
+    
+    @media (max-width: $lg) {
+      gap: 10%;
+    }
+    
+    @media (max-width: $md) {
+      gap: 5%;
+    }
+
+    @media (max-width: $sm) {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      padding: 0 30px;
+    }
+
+    &-content{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      p{
+        text-align: left;
+        
+        @media (max-width: $sm) {
+          text-align: center;
+        }
+      }
+    }
+
+    &-image{
+      border-radius: 8px;
+    
+      img{
+        border-radius: 8px;
+      }
+    }
+  }
+  
+  &-quality{
+    width: 100%;
+    
+    &-container{
+      width: 100%;
+      position: relative;
+      padding-top: 150px;
+      
+      @media (max-width: $sm) {
+        padding-top: 50px;
+      }
+
+      &-image{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: absolute;
+        border-radius: 8px;
+        z-index: 2;
+        top: 0;
+        
+        @media (max-width: $sm) {
+          padding: 0 20px;
+        }
+        
+        img{
+          border-radius: 8px;
+          
+          @media (max-width: $sm) {
+            width: 100%;
+          }
+        }
+      }
+      
+      &-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: relative;
+        border-radius: 8px;
+        gap: 24px;
+        padding: 220px 74px 62px 74px;
+        background-color: $dark-grey-blue;
+        color: $light-cream;
+        
+        @media (max-width: $sm) {
+          padding: 50% 37px 31px 37px;
+        }
+
+        p{
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  &-headquarters{
+
+    &-title{
+      color: $grey;
+      margin-bottom: 72px;
+      text-align: center;
+    }
+  }
+}

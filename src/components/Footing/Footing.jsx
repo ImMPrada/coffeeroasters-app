@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './styles.scss'
 import Facebook from '../../assets/facebook.svg'
 import Twitter from '../../assets/twitter.svg'
@@ -6,13 +7,13 @@ import Instagram from '../../assets/instagram.svg'
 const links = (
   <ul>
     <li>
-      <a className="nav-menu" href="/">HOME</a>
+      <Link className="nav-menu" to="/">HOME</Link>
     </li>
     <li>
-      <a className="nav-menu" href="/about">ABOUT US</a>
+      <Link className="nav-menu" to="/about">ABOUT US</Link>
     </li>
     <li>
-      <a className="nav-menu" href="/create-plan">CREATE YOUR PLAN</a>
+      <Link className="nav-menu" to="/create-plan">CREATE YOUR PLAN</Link>
     </li>
   </ul>
 )
