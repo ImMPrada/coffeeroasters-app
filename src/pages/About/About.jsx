@@ -5,10 +5,6 @@ import WitheCupCover from '../../assets/whitecup-header.png'
 import Template from '../../components/Template/Template.jsx'
 import Cover from '../../components/Cover/Cover.jsx'
 import HeadquartersInfo from '../../components/HeadquartersInfo/HeadquartersInfo.jsx'
-import ActionButton from '../../components/ActionButton/ActionButton.jsx'
-import Collection from '../../components/Collection/Collection.jsx'
-import WhyUs from '../../components/WhyUs/WhyUs.jsx'
-import Steps from '../../components/Steps/Steps.jsx'
 
 function About() {
   return (

@@ -4,6 +4,20 @@ import './styles.scss'
 import MenuOpenIcon from '../../assets/menu-open-button.svg'
 import MenuCloseIcon from '../../assets/menu-close-button.svg'
 
+const menuUl = (
+  <ul>
+    <li>
+      <Link className="menu-link nav-menu" to="/">HOME</Link>
+    </li>
+    <li>
+      <Link className="menu-link nav-menu" to="/about">ABOUT US</Link>
+    </li>
+    <li>
+      <Link className="menu-link nav-menu" to="/create-plan">CREATE YOUR PLAN</Link>
+    </li>
+  </ul>
+)
+
 function Menu() {
   const [menuToggle, setMenuToogle] = useState(false);
   
@@ -11,19 +25,6 @@ function Menu() {
     setMenuToogle(!menuToggle)
   }
 
-  const menuUl = (
-    <ul>
-      <li>
-        <Link className="menu-link" to="/">HOME</Link>
-      </li>
-      <li>
-        <Link className="menu-link" to="/about">ABOUT US</Link>
-      </li>
-      <li>
-        <Link className="menu-link" to="/create-plan">CREATE YOUR PLAN</Link>
-      </li>
-    </ul>
-  )
 
   return (
     <>

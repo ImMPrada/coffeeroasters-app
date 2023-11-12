@@ -1,7 +1,7 @@
 @import "../styles/app/colors.scss";
 @import "../styles/app/breakpoints.scss";
 
-.stepcard{
+.stepcard, .stepcard-dark{
   display: flex;
   flex-direction: column;
 
@@ -46,6 +46,18 @@
     .step-description{
       color: $dark-grey-blue;
       margin-top: 1.125rem;
+    }
+  }
+}
+
+.stepcard-dark{
+  &-content{
+    .step-title{
+      color: $light-cream;
+    }
+
+    .step-description{
+      color: $light-cream;
     }
   }
 }
